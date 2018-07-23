@@ -1,8 +1,18 @@
 function mouseOverProduct(x) {
 	//TODO - Could be better
-	x.className = "card onmouseoverProductItem";
+    x.classList.add("onmouseoverProductItem");
 }
 
 function mouseOut(x) {
-    x.className = "card";
+	x.classList.remove("onmouseoverProductItem");
+	
+}
+
+function mouseClickProduct(x) {
+	classSelected = "onmouseclickProductItem";
+	if (x.classList.contains(classSelected)){
+    x.classList.remove(classSelected);
+}else{
+	x.classList.add(classSelected);
+	}
 }
