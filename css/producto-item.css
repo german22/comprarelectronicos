@@ -1,4 +1,12 @@
 .onmouseoverProductItem {
     border-color: blue;
     border-width: 1px;
+    cursor: pointer;
+
+}
+
+@media (min-width: 576px)
+.card-group>.card+.card {
+    margin-left: 1px;
+    border-left: 1px;
 }
