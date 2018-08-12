@@ -1,0 +1,40 @@
+{
+	"modelos": [{
+			"nombre": "Iphone X",
+			"imagenPrincipal": "../img/iphoneXPrincipal.jpg",
+			"imagenes": [{
+				"url": "../img/iphoneXNegro.jpg"
+			}],
+			"caracteristicas": [{
+				"nombre": "Tamaño",
+				"unidad": "pulgadas",
+				"valores": [{
+						"valor": "5.8"
+					},
+					{
+						"valor": "5.5"
+					}
+				]
+			}]
+		},
+
+		{
+			"nombre": "Iphone 8",
+			"imagenPrincipal": "../img/iphone8Principal.jpg",
+			"imagenes": [{
+				"url": "../img/iphone8Negro.jpg"
+			}],
+			"caracteristicas": [{
+				"nombre": "Tamaño",
+				"unidad": "pulgadas",
+				"valores": [{
+						"valor": "5.1"
+					},
+					{
+						"valor": "5.9"
+					}
+				]
+			}]
+		}
+	]
+}
