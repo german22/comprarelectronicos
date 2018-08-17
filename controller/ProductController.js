@@ -1,4 +1,4 @@
-function getProduct(element,type,name){
+function getProduct(type,name){
 var product = document.createElement("div");
 var model = getElementByTypeAndName(type,name);
 var img = buildImageWithUrlAndName(model.imagenPrincipal,model.nombre);
@@ -12,6 +12,7 @@ return product;
 function buildImageWithUrlAndName(url,name){
 var img = document.createElement("figure");
 img.classList.add("card-img-top");
+img.classList.add("alignCenter");
 img.style.backgroundImage = "url('"+url+"')";
 img.setAttribute("alt", "Imagen de "+name);
 return img;
@@ -40,6 +41,7 @@ return lista;
 
 function buildCharacteristics(characteristic){
 var characteristicRet = document.createElement("div");
+characteristicRet.classList.add("product");
 var title = document.createElement("h3");
 title.innerHTML=characteristic.nombre+" "+characteristic.unidad;
 var br = document.createElement('br');

@@ -4,7 +4,7 @@
 }
 
 .card-group{
-margin: 5%
+margin-top: 1%
 }
 
 .onmouseclickProductItem {
@@ -22,7 +22,17 @@ margin: 5%
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
-    border: 1px solid rgba(0,0,0,.125);
+    border: 1px solid rgba(0,0,0,.125) disabled;
     border-radius: .25rem;
 	flex: 1 0 0%;
+}
+
+.alignCenter{
+  display: table;
+  margin: 0 auto;
+  }
+
+.row{
+margin-top: 20px;
+margin-left: 20px;
 }
