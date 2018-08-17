@@ -1,0 +1,38 @@
+.onmouseoverProductItem {
+    cursor: pointer;
+
+}
+
+.card-group{
+margin-top: 1%
+}
+
+.onmouseclickProductItem {
+    border-color: blue !important;
+    border-width: 1px;
+}
+
+.product {   
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125) disabled;
+    border-radius: .25rem;
+	flex: 1 0 0%;
+}
+
+.alignCenter{
+  display: table;
+  margin: 0 auto;
+  }
+
+.row{
+margin-top: 20px;
+margin-left: 20px;
+}

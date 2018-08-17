@@ -1,0 +1,14 @@
+#middle
+{
+	display : block;
+}
+
+#productContainer
+{
+display:inline-block; width:79%; vertical-align:top
+}
+
+#middle #menu
+{
+display:inline-block; width:20%; vertical-align:top
+}
