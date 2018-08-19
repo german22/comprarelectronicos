@@ -55,7 +55,7 @@ function getRowCharacteristicGeneral(characteristic1,characteristic2,characteris
 var row = document.createElement("div");
 var title = document.createElement("h3");
 title.classList.add("row");
-title.classList.add("title");
+title.classList.add("characteristicTitle");
 title.innerHTML=characteristic1.nombre;
 var values = document.createElement("div");
 values.classList.add("card-group");
