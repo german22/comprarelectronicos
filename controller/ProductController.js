@@ -2,11 +2,24 @@ function getProduct(type,name){
 var product = document.createElement("div");
 var model = getElementByTypeAndName(type,name);
 var img = buildImageWithUrlAndName(model.imagenPrincipal,model.nombre);
+var buyButton = buildBuyButton(model.comprar);
 var card = buildCardBody(model);
 product.appendChild(img);
+product.appendChild(buyButton);
 product.appendChild(card);
 return product;
 
+}
+
+function buildBuyButton(url){
+var a = document.createElement("a");
+var img = document.createElement("figure");
+img.classList.add("buyButton");
+img.classList.add("alignCenter");
+img.style.backgroundImage = "url('./images/icono_comprar.jpg')";
+a.setAttribute("href",url);
+a.appendChild(img);
+return a;
 }
 
 function buildImageWithUrlAndName(url,name){

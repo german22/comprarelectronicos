@@ -29,10 +29,16 @@ margin-top: 1%
 
 .alignCenter{
   display: table;
-  margin: 0 auto;
+  margin-left: 20px;
   }
 
 .row{
 margin-top: 20px;
 margin-left: 20px;
 }
+
+.title{
+margin-left: 20px;
+margin-right: 20px;
+border-bottom: 1px solid #ccc;
+    }

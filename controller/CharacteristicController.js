@@ -3,10 +3,10 @@ var characteristicRet = document.createElement("div");
 characteristicRet.classList.add("alignCenter");
 var br = document.createElement('br');
 characteristicRet.appendChild(br);
+console.log(characteristic.nombre)
 characteristic.valores.forEach(function(value)
 {
-var valor = document.createElement("a");
-valor.setAttribute("href","https://amzn.to/2Bt2x1U");
+var valor = document.createElement("p");
 valor.innerHTML = value.valor + " "+characteristic.unidad;
 characteristicRet.appendChild(valor);
 

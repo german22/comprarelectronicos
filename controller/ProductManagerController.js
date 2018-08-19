@@ -4,8 +4,10 @@ var model2 = getElementByTypeAndName(type,name2);
 var model3 = getElementByTypeAndName(type,name3);
 var productManaged = document.createElement("div");
 var imageRow = loadRowImages(model1,model2,model3);
+var buttonRow = loadRowBuyButton(model1,model2,model3);
 productManaged.appendChild(imageRow);
-var characteristics = loadCharacteristics(model1,model2,model3,productManaged);
+productManaged.appendChild(buttonRow);
+loadCharacteristics(model1,model2,model3,productManaged);
 return productManaged;
 }
 
@@ -36,11 +38,24 @@ row.appendChild(img3);
 return row;
 }
 
+function loadRowBuyButton(model1,model2,model3){
+var row = document.createElement("div");
+row.classList.add("card-group");
+var button1 = wrapperOnProduct(buildBuyButton(model1.comprar));
+var button2 = wrapperOnProduct(buildBuyButton(model2.comprar));
+var button3 = wrapperOnProduct(buildBuyButton(model3.comprar));
+row.appendChild(button1);
+row.appendChild(button2);
+row.appendChild(button3);
+return row;
+}
+
 
 function getRowCharacteristicGeneral(characteristic1,characteristic2,characteristic3){
 var row = document.createElement("div");
 var title = document.createElement("h3");
 title.classList.add("row");
+title.classList.add("title");
 title.innerHTML=characteristic1.nombre;
 var values = document.createElement("div");
 values.classList.add("card-group");

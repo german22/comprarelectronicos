@@ -12,3 +12,13 @@ html, body{
     height: 188px;
 }
 
+.buyButton{
+	max-width: 100px;
+	display: flex;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 150px;
+    height: 50px;
+}
+
+
