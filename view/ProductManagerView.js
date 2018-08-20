@@ -10,4 +10,4 @@ function reloadProducts(type){ //change to ID
         parent.removeChild(parent.lastChild)
     }
     parent.appendChild(productManaged);
-    }
+}

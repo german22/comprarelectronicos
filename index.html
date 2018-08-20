@@ -42,6 +42,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </script>
     <script type="text/javascript" src="./view/OnLoadView.js">
     </script>
+    <script type="text/javascript" src="./view/enumType.js">
+    </script>
     <script type="text/javascript" src="./view/ProductManagerView.js">
     </script>
 </head>
@@ -106,16 +108,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div>
         <div class="card-group">
         <div class="product" onclick="mouseClickProduct(this)" onmouseover="mouseOverProduct(this)" onmouseout="mouseOut(this)">
-      <select id="combo1" onload="insertModelsByTypeInto(this,'iphone')" onchange="reloadProducts('iphone')" >
+      <select id="combo1" onload="insertModelsByTypeInto(this,globalType)" onchange="reloadProducts(globalType)" >
       </select>
   </div>
   <div class="product" onclick="mouseClickProduct(this)" onmouseover="mouseOverProduct(this)" onmouseout="mouseOut(this)">
-      <select id="combo2" onload="insertModelsByTypeInto(this,'iphone')" onchange="reloadProducts('iphone')" >
+      <select id="combo2" onload="insertModelsByTypeInto(this,globalType)" onchange="reloadProducts(globalType)" >
       </select>
 
   </div>
   <div class="product" onclick="mouseClickProduct(this)" onmouseover="mouseOverProduct(this)" onmouseout="mouseOut(this)">
-      <select id="combo3" onload="insertModelsByTypeInto(this,'iphone')" onchange="reloadProducts('iphone')" >
+      <select id="combo3" onload="insertModelsByTypeInto(this,globalType)" onchange="reloadProducts(globalType)" >
       </select>
 
   </div>

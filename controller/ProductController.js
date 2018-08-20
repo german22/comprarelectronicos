@@ -13,10 +13,11 @@ return product;
 
 function buildBuyButton(url){
 var a = document.createElement("a");
-var img = document.createElement("figure");
-img.classList.add("buyButton");
-img.classList.add("alignCenter");
-img.style.backgroundImage = "url('./images/icono_comprar.jpg')";
+var img = document.createElement("button");
+img.classList.add("button");
+img.classList.add("buttonBlue");
+img.innerHTML = "Comprar";
+a.classList.add("alignCenter");
 a.setAttribute("href",url);
 a.appendChild(img);
 return a;
