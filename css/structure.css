@@ -12,3 +12,12 @@ display:inline-block; width:79%; vertical-align:top
 {
 display:inline-block; width:20%; vertical-align:top
 }
+
+.combo{
+border-top : none;
+border-left : none;
+border-right : none;
+margin-left:20px;
+margin-right:20px;
+padding : 10px
+}
