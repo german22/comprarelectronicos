@@ -1,5 +1,14 @@
 function getComboContent(type){
 var models = getNameByType(type);
+return buildComboOptions(models);
+}
+
+function getComboTypes(){
+var models = getTypes();
+return buildComboOptions(models);
+}
+
+function buildComboOptions(models){
   var option = '<option value="model" selected="">name</option>';
   var contentRet = "";
   models.forEach(function(model)
@@ -10,6 +19,4 @@ var models = getNameByType(type);
 		contentRet = contentRet.concat(optionAux);
     });
     return contentRet;
-
 }
-
