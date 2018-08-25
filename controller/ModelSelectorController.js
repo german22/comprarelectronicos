@@ -9,7 +9,7 @@ return buildComboOptionsType(models);
 }
 
 function buildComboOptions(models){
-  var option = '<option value="model" selected="">name</option>';
+  var option = '<option value="model" >name</option>';
   var contentRet = "";
   models.forEach(function(model)
     {
@@ -22,8 +22,8 @@ function buildComboOptions(models){
 }
 
 function buildComboOptionsType(models){
-  var option = '<option value="model" selected="">name</option>';
-  var contentRet = "";
+  var option = '<option value="model">name</option>';
+  var contentRet = '<option value="" selected>Seleccionar producto</option>';
   models.forEach(function(model)
     {
         var optionAux = option;
