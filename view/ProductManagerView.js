@@ -11,3 +11,7 @@ function reloadProducts(type){ //change to ID
     }
     parent.appendChild(productManaged);
 }
+
+function reloadPageUrl(element){
+window.document.location.href = "./index.html?type="+element.options[element.selectedIndex].value;
+}
