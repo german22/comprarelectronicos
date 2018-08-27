@@ -31,7 +31,7 @@ var row = document.createElement("div");
 row.classList.add("card-group");
 var img1 = wrapperOnProduct(buildImageWithUrlAndName(model1.imagenPrincipal,model1.nombre));
 var img2 = wrapperOnProduct(buildImageWithUrlAndName(model2.imagenPrincipal,model2.nombre));
-var img3 = wrapperOnProduct(buildImageWithUrlAndName(model3.imagenPrincipal,model3.nombre));
+var img3 = wrapperOnProduct(buildImageWithUrlAndName(model3.imagenPrincipal,model3.nombre),true);
 row.appendChild(img1);
 row.appendChild(img2);
 row.appendChild(img3);
@@ -43,7 +43,7 @@ var row = document.createElement("div");
 row.classList.add("card-group");
 var button1 = wrapperOnProduct(buildBuyButton(model1.comprar));
 var button2 = wrapperOnProduct(buildBuyButton(model2.comprar));
-var button3 = wrapperOnProduct(buildBuyButton(model3.comprar));
+var button3 = wrapperOnProduct(buildBuyButton(model3.comprar),true);
 row.appendChild(button1);
 row.appendChild(button2);
 row.appendChild(button3);
@@ -61,7 +61,7 @@ var values = document.createElement("div");
 values.classList.add("card-group");
 var characteristic1 = wrapperOnProduct(buildCharacteristicGeneral(characteristic1));
 var characteristic2 = wrapperOnProduct(buildCharacteristicGeneral(characteristic2));
-var characteristic3 = wrapperOnProduct(buildCharacteristicGeneral(characteristic3));
+var characteristic3 = wrapperOnProduct(buildCharacteristicGeneral(characteristic3),true);
 values.appendChild(characteristic1);
 values.appendChild(characteristic2);
 values.appendChild(characteristic3);
@@ -70,9 +70,12 @@ row.appendChild(values);
 return row;
 }
 
-function wrapperOnProduct(toWrapped){
+function wrapperOnProduct(toWrapped,third = false){
 var element = document.createElement("div");
 element.classList.add("product");
+if (third){
+element.classList.add("product-last");
+}
 element.appendChild(toWrapped);
 return element;
 }
