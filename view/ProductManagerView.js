@@ -4,11 +4,19 @@ function reloadProducts(type) { //change to ID
   var combo3 = document.getElementById("combo3");
   var productManaged = loadProducts(type, combo1.options[combo1.selectedIndex].innerHTML,
       combo2.options[combo2.selectedIndex].innerHTML, combo3.options[combo3.selectedIndex].innerHTML);
+    updateDevices(productManaged);
+}
+
+function updateDevices(productManaged){
   var parent = combo1.parentElement.parentElement.parentElement;
-  if (1 < parent.childElementCount) {
+  removeChildrenOfComboParent(parent);
+  parent.appendChild(productManaged);
+}
+
+function removeChildrenOfComboParent(parent){
+  while (1 < parent.childElementCount){
     parent.removeChild(parent.lastChild)
   }
-  parent.appendChild(productManaged);
 }
 
 function reloadPageUrl(element){

@@ -1,48 +1,64 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124171435-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-
-    gtag('js', new Date());
-
-  gtag('config', 'UA-124171435-1');
-</script>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PJJQLR5');</script><!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124171435-1"></script>
     <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-124171435-1');
-</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-124171435-1');
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PJJQLR5');
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124171435-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-124171435-1');
+    </script>
 
     <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="google-site-verification" content="Nl4LZD4QOQGET9drvFHu9aT0lp_fjx5ZHi9qV9oSsec" />
-<meta name="description" content="Mejora tus comprar a traves del mas simple comparador del mercado!" />
-<meta name="keywords" content="comprar electronicos, iphone x,smart watch,pulsera, comparador electronicos, comparador iphone" />
-<meta name="robots" content="index,follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="Nl4LZD4QOQGET9drvFHu9aT0lp_fjx5ZHi9qV9oSsec" />
+    <meta name="description" content="Mejora tus comprar a traves del mas simple comparador del mercado!" />
+    <meta name="keywords" content="comprar electronicos, iphone x,smart watch,pulsera, comparador electronicos, comparador iphone" />
+    <meta name="robots" content="index,follow" />
     <meta name="description" content="Mejora tus comprar a traves del mas simple comparador del mercado y visualiza facilmente que producto necesitas" />
     <meta name="keywords" content="comprar electronicos, iphone x,comprar,electronicos" />
     <meta name="robots" content="index,follow" />
     <meta property="og:url" content="El link de tu página web" />
-    <meta property='og:site_name' content='Comprar electronicos'/>
-    <meta property='og:locale' content='es_PE'/>
-    <meta property='og:type' content='website'/>
+    <meta property='og:site_name' content='Comprar electronicos' />
+    <meta property='og:locale' content='es_PE' />
+    <meta property='og:type' content='website' />
     <meta property="og:title" content="Comprar electronicos" />
     <meta property="og:description" content="Mejora tus comprar a traves del mas simple comparador del mercado y visualiza facilmente que producto necesitas" />
     <meta property="og:image" content="https://www.comprarelectronicos.com/images/Logo.jpg" />
@@ -58,44 +74,176 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <body width="device-width">
 <!-- Google Tag Manager (noscript) -->
 <noscript>
-  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PJJQLR5"
-          height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PJJQLR5" height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </noscript>
 <!-- End Google Tag Manager (noscript) -->
 
 <div id="main">
     <h1 class="titleClass">Comprar electrónicos</h1>
     <h2 class="titleClass">
-        <select id="comboMenu" class="combo" onload="insertTypes(this)" onchange="reloadPageUrl(this)" >
-        </select>
-        </h2>
-    </center>
+        <select id="comboMenu" class="combo" onload="insertTypes(this)" onchange="reloadPageUrl(this)"><option value="pulsera">Smart watch</option><option value="iphone" selected="">Iphone</option></select>
+    </h2>
+
     <div>
         <div class="card-group">
-        <div class="product" onclick="mouseClickProduct(this)" onmouseover="mouseOverProduct(this)" onmouseout="mouseOut(this)">
-      <select id="combo1" class="combo" onload="insertModelsByTypeInto(this,globalType)" onchange="reloadProducts(globalType)" >
-      </select>
-  </div>
-  <div class="product"  onclick="mouseClickProduct(this)" onmouseover="mouseOverProduct(this)" onmouseout="mouseOut(this)">
-      <select id="combo2" class="combo" onload="insertModelsByTypeInto(this,globalType)" onchange="reloadProducts(globalType)" >
-      </select>
+            <div class="product" onclick="mouseClickProduct(this)" onmouseover="mouseOverProduct(this)" onmouseout="mouseOut(this)">
+                <select id="combo1" class="combo" onload="insertModelsByTypeInto(this,globalType)" onchange="reloadProducts(globalType)">
+                    <option value="Iphone X">Iphone X</option>
+                    <option value="Iphone 8">Iphone 8</option>
+                    <option value="Iphone 8 Plus">Iphone 8 Plus</option>
+                </select>
+            </div>
+            <div class="product" onclick="mouseClickProduct(this)" onmouseover="mouseOverProduct(this)" onmouseout="mouseOut(this)">
+                <select id="combo2" class="combo" onload="insertModelsByTypeInto(this,globalType)" onchange="reloadProducts(globalType)">
+                    <option value="Iphone X">Iphone X</option>
+                    <option value="Iphone 8">Iphone 8</option>
+                    <option value="Iphone 8 Plus">Iphone 8 Plus</option>
+                </select>
 
-  </div>
-  <div class="product product-last" onclick="mouseClickProduct(this)" onmouseover="mouseOverProduct(this)" onmouseout="mouseOut(this)">
-      <select id="combo3" class="combo" onload="insertModelsByTypeInto(this,globalType)" onchange="reloadProducts(globalType)" >
-      </select>
+            </div>
+            <div class="product product-last" onclick="mouseClickProduct(this)" onmouseover="mouseOverProduct(this)" onmouseout="mouseOut(this)">
+                <select id="combo3" class="combo" onload="insertModelsByTypeInto(this,globalType)" onchange="reloadProducts(globalType)">
+                    <option value="Iphone X">Iphone X</option>
+                    <option value="Iphone 8">Iphone 8</option>
+                    <option value="Iphone 8 Plus">Iphone 8 Plus</option>
+                </select>
 
-  </div>
-</div>
-</div>
-
-
+            </div>
+        </div>
+        <div>
+            <div class="card-group">
+                <div class="product">
+                    <figure class="card-img-top alignCenter" alt="Imagen de Iphone X" style="background-image: url(&quot;./images/IphoneX.jpg&quot;);"></figure>
+                </div>
+                <div class="product">
+                    <figure class="card-img-top alignCenter" alt="Imagen de Iphone 8" style="background-image: url(&quot;./images/Iphone8.jpg&quot;);"></figure>
+                </div>
+                <div class="product product-last">
+                    <figure class="card-img-top alignCenter" alt="Imagen de Iphone 8 Plus" style="background-image: url(&quot;./images/Iphone8Plus.jpg&quot;);"></figure>
+                </div>
+            </div>
+            <div class="card-group">
+                <div class="product">
+                    <a class="alignCenter" href="https://amzn.to/2Bt2x1U">
+                        <button class="button buttonBlue">Comprar</button>
+                    </a>
+                </div>
+                <div class="product">
+                    <a class="alignCenter" href="https://amzn.to/2Po8ujx">
+                        <button class="button buttonBlue">Comprar</button>
+                    </a>
+                </div>
+                <div class="product product-last">
+                    <a class="alignCenter" href="https://amzn.to/2N50CC0">
+                        <button class="button buttonBlue">Comprar</button>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h3 class="row characteristicTitle">Tamaño de pantalla</h3>
+                <div class="card-group">
+                    <div class="product">
+                        <div class="alignCenter">
+                            <p>5.8
+                                <br>Super retina HD pulgadas</p>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="alignCenter">
+                            <p>4.7
+                                <br>Retina HD pulgadas</p>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="product product-last">
+                        <div class="alignCenter">
+                            <p>5.5
+                                <br>Retina HD pulgadas</p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3 class="row characteristicTitle">Camara</h3>
+                <div class="card-group">
+                    <div class="product">
+                        <div class="alignCenter">
+                            <p>12 Mpx
+                                <br>Dual con gran angular y teleobjetivo </p>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="alignCenter">
+                            <p>12 Mpx</p>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="product product-last">
+                        <div class="alignCenter">
+                            <p>12 Mpx
+                                <br>Dual con gran angular y teleobjetivo </p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3 class="row characteristicTitle">Metodo de identificación</h3>
+                <div class="card-group">
+                    <div class="product">
+                        <div class="alignCenter">
+                            <p>Face ID </p>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="alignCenter">
+                            <p>Touch ID </p>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="product product-last">
+                        <div class="alignCenter">
+                            <p>Touch ID </p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3 class="row characteristicTitle">Procesador</h3>
+                <div class="card-group">
+                    <div class="product">
+                        <div class="alignCenter">
+                            <p>Chip A11 Bionic </p>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="alignCenter">
+                            <p>Chip A11 Bionic </p>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="product product-last">
+                        <div class="alignCenter">
+                            <p>Chip A11 Bionic </p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </div>
 <footer class="footer" role="contentinfo">
-  <p>Creado por: Germán Rodriguez</p>
-  <p>Contacto: <a href="mailto:comprarelectronicos@gmail.com">
-    comprarelectronicos@gmail.com</a>.</p>
+    <p>Creado por: Germán Rodriguez</p>
+    <p>Contacto: <a href="mailto:comprarelectronicos@gmail.com">
+        comprarelectronicos@gmail.com</a>.</p>
 </footer>
 <!-- DB -->
 <script type="text/javascript" src="./js/productSelector.js">
@@ -120,14 +268,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
 <script type="text/javascript" src="./view/ProductManagerView.js">
 </script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 </body>
+
 </html>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
-        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-        crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
