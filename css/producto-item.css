@@ -55,7 +55,8 @@
 
 .alignCenter {
   display: table;
-  margin-left: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .row {
