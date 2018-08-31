@@ -1,23 +1,24 @@
-#middle
-{
-	display : block;
+#middle {
+  display: block;
 }
 
-#productContainer
-{
-display:inline-block; width:79%; vertical-align:top
+#productContainer {
+  display: inline-block;
+  width: 79%;
+  vertical-align: top
 }
 
-#middle #menu
-{
-display:inline-block; width:20%; vertical-align:top
+#middle #menu {
+  display: inline-block;
+  width: 20%;
+  vertical-align: top
 }
 
-.combo{
-border-top : none;
-border-left : none;
-border-right : none;
-margin-left:20px;
-margin-right:20px;
-padding : 10px
+.combo {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 10px
 }

@@ -1,75 +1,71 @@
-function getProduct(type,name){
-var product = document.createElement("div");
-var model = getElementByTypeAndName(type,name);
-var img = buildImageWithUrlAndName(model.imagenPrincipal,model.nombre);
-var buyButton = buildBuyButton(model.comprar);
-var card = buildCardBody(model);
-product.appendChild(img);
-product.appendChild(buyButton);
-product.appendChild(card);
-return product;
+function getProduct(type, name) {
+  const product = document.createElement("div");
+  const model = getElementByTypeAndName(type, name);
+  const img = buildImageWithUrlAndName(model.imagenPrincipal, model.nombre);
+  const buyButton = buildBuyButton(model.comprar);
+  const card = buildCardBody(model);
+  product.appendChild(img);
+  product.appendChild(buyButton);
+  product.appendChild(card);
+  return product;
 
 }
 
-function buildBuyButton(url){
-var a = document.createElement("a");
-var img = document.createElement("button");
-img.classList.add("button");
-img.classList.add("buttonBlue");
-img.innerHTML = "Comprar";
-a.classList.add("alignCenter");
-a.setAttribute("href",url);
-a.appendChild(img);
-return a;
+function buildBuyButton(url) {
+  const a = document.createElement("a");
+  const img = document.createElement("button");
+  img.classList.add("button");
+  img.classList.add("buttonBlue");
+  img.innerHTML = "Comprar";
+  a.classList.add("alignCenter");
+  a.setAttribute("href", url);
+  a.appendChild(img);
+  return a;
 }
 
-function buildImageWithUrlAndName(url,name){
-var img = document.createElement("figure");
-img.classList.add("card-img-top");
-img.classList.add("alignCenter");
-img.style.backgroundImage = "url('"+url+"')";
-img.setAttribute("alt", "Imagen de "+name);
-return img;
+function buildImageWithUrlAndName(url, name) {
+  const img = document.createElement("figure");
+  img.classList.add("card-img-top");
+  img.classList.add("alignCenter");
+  img.style.backgroundImage = "url('" + url + "')";
+  img.setAttribute("alt", "Imagen de " + name);
+  return img;
 }
 
-
-function buildCardBody(product){
-var card = document.createElement("div");
-card.classList.add("card-body");
-card.appendChild(buildCharacteristicsList(product))
-return card;
+function buildCardBody(product) {
+  const card = document.createElement("div");
+  card.classList.add("card-body");
+  card.appendChild(buildCharacteristicsList(product));
+  return card;
 }
 
-
-function buildCharacteristicsList(product){
-var lista = document.createElement("ul");
-lista.classList.add("list");
-lista.classList.add("list-circle");
-product.caracteristicas.forEach(function(characteristic)
-{
-var characteristicLi = buildCharacteristics(characteristic);
-lista.appendChild(characteristicLi);
-});
-return lista;
+function buildCharacteristicsList(product) {
+  const lista = document.createElement("ul");
+  lista.classList.add("list");
+  lista.classList.add("list-circle");
+  product.caracteristicas.forEach(function (characteristic) {
+    const characteristicLi = buildCharacteristics(characteristic);
+    lista.appendChild(characteristicLi);
+  });
+  return lista;
 }
 
-function buildCharacteristics(characteristic){
-var characteristicRet = document.createElement("div");
-characteristicRet.classList.add("product");
-var title = document.createElement("h3");
-title.innerHTML=characteristic.nombre+" "+characteristic.unidad;
-var br = document.createElement('br');
-characteristicRet.appendChild(title);
-characteristicRet.appendChild(br);
-characteristic.valores.forEach(function(value)
-{
-var valor = document.createElement("p");
-valor.innerHTML = value.valor;
-characteristicRet.appendChild(valor);
+function buildCharacteristics(characteristic) {
+  const characteristicRet = document.createElement("div");
+  characteristicRet.classList.add("product");
+  const title = document.createElement("h3");
+  title.innerHTML = characteristic.nombre + " " + characteristic.unidad;
+  const br = document.createElement('br');
+  characteristicRet.appendChild(title);
+  characteristicRet.appendChild(br);
+  characteristic.valores.forEach(function (value) {
+    const valor = document.createElement("p");
+    valor.innerHTML = value.valor;
+    characteristicRet.appendChild(valor);
 
-});
-characteristicRet.appendChild(br);
-return characteristicRet;
+  });
+  characteristicRet.appendChild(br);
+  return characteristicRet;
 }
 
 /**

@@ -1,34 +1,34 @@
 .onmouseoverProductItem {
-    cursor: pointer;
+  cursor: pointer;
 
 }
 
-.card-group{
-margin-top: 1%
+.card-group {
+  margin-top: 1%
 }
 
 .onmouseclickProductItem {
-    border-color: blue !important;
-    border-width: 1px;
+  border-color: blue !important;
+  border-width: 1px;
 }
 
-.product {   
-    position: relative;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: #fff;
-    background-clip: border-box;
-    border: 1px solid rgba(0,0,0,.125) disabled;
-    border-radius: .25rem;
-	flex: 1 0 0%;
+.product {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, .125) disabled;
+  border-radius: .25rem;
+  flex: 1 0 0;
 }
 
 @media only screen and (max-width: 678px) {
-    .product {
+  .product {
     position: relative;
     display: -ms-flexbox;
     display: flex;
@@ -38,51 +38,53 @@ margin-top: 1%
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
-    border: 1px solid rgba(0,0,0,.125) disabled;
+    border: 1px solid rgba(0, 0, 0, .125) disabled;
     border-radius: .25rem;
-    flex: 1 0 0%;
-    }
+    flex: 1 0 0;
+  }
 }
 
 .product-last {
 }
 
 @media only screen and (max-width: 678px) {
-    .product-last {
-        display: none;
-    }
+  .product-last {
+    display: none;
+  }
 }
 
-.alignCenter{
+.alignCenter {
   display: table;
   margin-left: 20px;
-  }
-
-.row{
-margin-top: 10px;
-margin-left: 20px;
 }
 
-.characteristicTitle{
-margin-left: 20px;
-margin-right: 20px;
-border-bottom: 1px solid #ccc;
-    }
+.row {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.characteristicTitle {
+  margin-left: 20px;
+  margin-right: 20px;
+  border-bottom: 1px solid #ccc;
+}
 
 .button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
 .buttonBlue {
-    background-color: #008CBA;
-    } /* Blue */
+  background-color: #008CBA;
+}
+
+/* Blue */
 
