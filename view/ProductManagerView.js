@@ -13,5 +13,11 @@ function reloadProducts(type){ //change to ID
 }
 
 function reloadPageUrl(element){
-window.document.location.href = "./index.html?type="+element.options[element.selectedIndex].value;
+    var type = element.options[element.selectedIndex].value;
+    if (type=="iphone"){
+    window.document.location.href = "./index.html";
+    }else
+    {
+    window.document.location.href = "./"+type+".html?type="+type;
+    }
 }
