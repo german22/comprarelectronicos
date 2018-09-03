@@ -41,6 +41,7 @@
     border: 1px solid rgba(0, 0, 0, .125) disabled;
     border-radius: .25rem;
     flex: 1 0 0;
+    display: inline-block;
   }
 }
 
