@@ -61,13 +61,15 @@
     <meta property='og:type' content='website' />
     <meta property="og:title" content="Comprar electronicos" />
     <meta property="og:description" content="Mejora tus comprar a traves del mas simple comparador del mercado y visualiza facilmente que producto necesitas" />
-    <meta property="og:image" content="https://www.comprarelectronicos.com/images/Logo.jpg" />
-    <link rel="shortcut icon" href="./images/Logo.jpg">
+    <meta property="og:image" content="https://www.comprarelectronicos.com/images/Logo.png" />
+    <link rel="shortcut icon" href="./images/Logo.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/estilo.css">
     <link rel="stylesheet" href="./css/producto-item.css">
     <link rel="stylesheet" href="./css/structure.css">
+    <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
+
     <title>Comprar electronicos</title>
 </head>
 
@@ -79,10 +81,13 @@
 <!-- End Google Tag Manager (noscript) -->
 
 <div id="main">
-    <h1 class="titleClass">Comprar electrónicos</h1>
-    <h2 class="titleClass">
-        <select id="comboMenu" class="combo" onload="insertTypes(this)" onchange="reloadPageUrl(this)"><option value="pulsera">Smart watch</option><option value="iphone" selected="">Iphone</option></select>
-    </h2>
+
+        <div class="header" id="myHeader">
+                <div class="titleClassImage"></div>
+                <h2 class="titleClass">
+                    <select id="comboMenu" class="combo" onload="insertTypes(this)" onchange="reloadPageUrl(this)"><option value="pulsera">Smart watch</option><option value="iphone" selected="">Iphone</option></select>
+                </h2>
+        </div>
 
     <div>
         <div class="card-group">
@@ -265,6 +270,8 @@
 <script type="text/javascript" src="./view/OnLoadView.js">
 </script>
 <script type="text/javascript" src="./view/enumType.js">
+</script>
+<script type="text/javascript" src="./view/visualEffects.js">
 </script>
 <script type="text/javascript" src="./view/ProductManagerView.js">
 </script>

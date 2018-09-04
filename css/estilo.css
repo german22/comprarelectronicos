@@ -9,7 +9,7 @@ html, body {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 54%;
-  height: 268px;
+  height: 288px;
 }
 
 .buyButton {
@@ -21,9 +21,12 @@ html, body {
   height: 50px;
 }
 
-.titleClass{
-  text-align: center;
+.titleContent{
+display: block;
 }
+
+
+
 
 
 
