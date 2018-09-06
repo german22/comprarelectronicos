@@ -32,38 +32,43 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta name="description" content="Mejora tus comprar a traves del mas simple comparador del mercado!" />
     <meta name="keywords" content="comprar electronicos, iphone x,smart watch,pulsera, comparador electronicos, comparador iphone" />
     <meta name="robots" content="index,follow" />
-    <meta name="description" content="Mejora tus comprar a traves del mas simple comparador del mercado y visualiza facilmente que producto necesitas" />
+    <meta name="description" content="Mejora tus comprar a traves del mas simple comparador del mercado y visualiza fácilmente que producto necesitas" />
     <meta name="keywords" content="comprar electronicos, iphone x,comprar,electronicos" />
     <meta name="robots" content="index,follow" />
     <meta property="og:url" content="El link de tu página web" />
-    <meta property='og:site_name' content='Comprar electronicos'/>
-    <meta property='og:locale' content='es_PE'/>
-    <meta property='og:type' content='website'/>
+    <meta property='og:site_name' content='Comprar electronicos' />
+    <meta property='og:locale' content='es_PE' />
+    <meta property='og:type' content='website' />
     <meta property="og:title" content="Comprar electronicos" />
-    <meta property="og:description" content="Mejora tus comprar a traves del mas simple comparador del mercado y visualiza facilmente que producto necesitas" />
-    <meta property="og:image" content="https://www.comprarelectronicos.com/images/Logo.jpg" />
-    <link rel="shortcut icon" href="./images/Logo.jpg">
+    <meta property="og:description" content="Mejora tus comprar a traves del mas simple comparador del mercado y visualiza fácilmente que producto necesitas" />
+    <meta property="og:image" content="https://www.comprarelectronicos.com/images/Logo.png" />
+    <link rel="shortcut icon" href="./images/Logo.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/estilo.css">
     <link rel="stylesheet" href="./css/producto-item.css">
     <link rel="stylesheet" href="./css/structure.css">
+    <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
+
     <title>Comprar electronicos</title>
 </head>
 
 <body width="device-width">
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PJJQLR5"
-                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PJJQLR5" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
 <!-- End Google Tag Manager (noscript) -->
 
 <div id="main">
-    <center> <h1>Comprar electrónicos</h1> </center>
-    <center>
-        <h2>
-            <select id="comboMenu" class="combo" onload="insertTypes(this)" onchange="reloadPageUrl(this)"><option value="pulsera" selected="">Smart watch</option><option value="iphone">Iphone</option></select>
-        </h2>
-    </center>
+
+        <div class="header" id="myHeader">
+                <div class="titleClassImage"></div>
+                <h2 class="titleClass">
+                    <select id="comboMenu" class="combo" onload="insertTypes(this)" onchange="reloadPageUrl(this)"><option value="pulsera">Smart watch</option><option value="iphone" selected="">Iphone</option></select>
+                </h2>
+        </div>
+
     <div>
         <div class="card-group">
             <div class="product" onclick="mouseClickProduct(this)" onmouseover="mouseOverProduct(this)" onmouseout="mouseOut(this)">
@@ -108,6 +113,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script type="text/javascript" src="./view/OnLoadView.js">
 </script>
 <script type="text/javascript" src="./view/enumType.js">
+</script>
+<script type="text/javascript" src="./view/visualEffects.js">
 </script>
 <script type="text/javascript" src="./view/ProductManagerView.js">
 </script>

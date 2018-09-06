@@ -15,13 +15,47 @@ function loadCharacteristics(model1, model2, model3, productManaged) {
   var characteristics1 = model1.caracteristicas;
   var characteristics2 = model2.caracteristicas;
   var characteristics3 = model3.caracteristicas;
-  for (var i = 0; i < characteristics1.length; i++) {
+  const maxLength = Math.max(characteristics1.length,characteristics2.length,characteristics3.length)
+  if (maxLength == characteristics1.length)
+    {
+    characteristicGuide = characteristics1;
+    }else{
+    if (maxLength == characteristics2.length)
+        {
+        characteristicGuide = characteristics2;
+        }else
+        {
+            characteristicGuide = characteristics3;
+
+        }
+    }
+  for (var i = 0; i < maxLength; i++) {
     let row = {};
-    if (characteristics1[i].type == "general") {
-      row = getRowCharacteristicGeneral(characteristics1[i], characteristics2[i], characteristics3[i]);
+    if (characteristicGuide[i].type == "general") {
+       const characteristicName = characteristicGuide[i].nombre;
+       const index1 = verifyCharacteristic(i,characteristicName,characteristics1)
+       const index2 = verifyCharacteristic(i,characteristicName,characteristics2)
+       const index3 = verifyCharacteristic(i,characteristicName,characteristics3)
+      row = getRowCharacteristicGeneral(characteristicName,characteristics1[index1], characteristics2[index2], characteristics3[index3]);
+
     }
     productManaged.appendChild(row);
   }
+}
+
+
+function verifyCharacteristic(i,characteristicName,characteristic){
+        var index = i;
+       if (characteristic[i] == null || typeof characteristic[i].nombre=='undefined' || characteristicName!=characteristic[i].nombre)
+            {
+                  index = characteristic.findIndex(findIndexByName,characteristicName);
+            }
+            return index
+            }
+
+function findIndexByName(element,index,array){
+    return  (element.nombre==this)
+
 }
 
 function loadRowImages(model1, model2, model3) {
@@ -48,12 +82,12 @@ function loadRowBuyButton(model1, model2, model3) {
   return row;
 }
 
-function getRowCharacteristicGeneral(characteristic1, characteristic2, characteristic3) {
+function getRowCharacteristicGeneral(name,characteristic1, characteristic2, characteristic3) {
   const row = document.createElement("div");
   const title = document.createElement("h3");
   title.classList.add("row");
   title.classList.add("characteristicTitle");
-  title.innerHTML = characteristic1.nombre;
+  title.innerHTML = name;
   const values = document.createElement("div");
   values.classList.add("card-group");
   const characteristic1Loaded = wrapperOnProduct(buildCharacteristicGeneral(characteristic1));
