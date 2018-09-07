@@ -11,11 +11,11 @@
 
 .titleClassImage{
     float: left;
-    background-image: url(../images/Logo.png);
+    background-image: url(../images/LogoHorizontal.png);
     background-repeat: no-repeat;
-    background-size: 207px 98%;
-    height: 100%;
-    width: 207px;
+    background-size: 507px 98%;
+    height: 75%;
+    width: 507px;
     z-index: 1;
 }
 
