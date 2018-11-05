@@ -19,13 +19,38 @@
     z-index: 1;
 }
 
+.amazonAffiliate{
+    float: right;
+    background-image: url(../images/amazonaffiliate.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 175px;
+    height: 30px;
+    display: inline-block;
+    z-index: 1;
+
+}
+
 @media only screen and (max-width: 507px) {
   .titleClassImage {
     background-image: url(../images/LogoHorizontal.png);
     background-repeat: no-repeat;
-    background-size: 100% 98%;
+    background-size: 100%;
     height: 75%;
     width: 100%;
+    z-index: 1;
+  }
+}
+
+@media only screen and (max-width: 507px) {
+  .titleClassImage {
+    float: right;
+    background-image: url(../images/amazonaffiliate.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 175px;
+    height: 30px;
+    display: inline-block;
     z-index: 1;
   }
 }
