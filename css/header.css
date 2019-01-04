@@ -19,17 +19,6 @@
     z-index: 1;
 }
 
-.amazonAffiliate{
-    float: right;
-    background-image: url(../images/amazonaffiliate.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 175px;
-    height: 30px;
-    display: inline-block;
-    z-index: 1;
-
-}
 
 @media only screen and (max-width: 507px) {
   .titleClassImage {
